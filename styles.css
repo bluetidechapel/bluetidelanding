@@ -24,11 +24,20 @@ header {
     position: relative;
 }
 
+
 .header-image img {
+  width: 100%;           /* Full width */
+  height: 300px;          /* Fixed height */
+  object-fit: contain;    /* Ensures the entire image is visible without cropping */
+}
+
+
+/*.header-image img {
     width: 100%;
     display: block; /* Remove whitespace below the image */
 }
 
+*/
 .header-text {
     position: absolute;
     top: 50%;
@@ -92,6 +101,7 @@ nav ul li a.cta-button:hover {
 /* Dropdown Container */
 
 html {
+  scroll-behavior: smooth;
   scroll-padding-top: 70px; /* Adjust this to match the navbar height */
 }
 
