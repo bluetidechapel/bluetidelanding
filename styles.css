@@ -15,6 +15,7 @@ body {
 
 /* Header Enhancements */
 header {
+    margin-top: 10px; /* Adds spacing between nav and header */
     position: relative;
     text-align: center;
     color: white;
@@ -57,6 +58,16 @@ header {
 }
 
 /* Navigation Enhancements */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -159,16 +170,11 @@ main {
     text-align: center;
 }
 
-.content h1 {
+.content h1, .content h2 {
     color: #3282B9;
     border-bottom: 2px solid #3282B9;
     padding-bottom: 10px;
-}
-
-.content h2 {
-    color: #3282B9;
-    border-bottom: 2px solid #3282B9;
-    padding-bottom: 10px;
+    text-align: center;
 }
 
 .content p {
