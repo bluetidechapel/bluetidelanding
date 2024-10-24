@@ -1,0 +1,369 @@
+
+/* General Reset and Enhancements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f8ff, #e0f1ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Enhancements */
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    position: relative;
+}
+
+.header-image img {
+    width: 100%;
+    display: block; /* Remove whitespace below the image */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #3282B9;
+}
+
+/* Navigation Enhancements */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #333, #4f4f4f);
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #add8e6;
+    color: #333;
+}
+
+/* CTA Button Styling for Important Links */
+nav ul li a.cta-button {
+    background-color: #2DB3DE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a.cta-button:hover {
+    background-color: #2495bf;
+    color: #fff;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2495bf;
+    min-width: 180px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #add8e6;
+    color: #333 !important;
+}
+
+/* Content Area */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 {
+    color: #3282B9;
+    border-bottom: 2px solid #3282B9;
+    padding-bottom: 10px;
+}
+
+.content h2 {
+    color: #3282B9;
+    border-bottom: 2px solid #3282B9;
+    padding-bottom: 10px;
+}
+
+.content p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* Image Gallery */
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image-holder {
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.image-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-holder p {
+    padding: 10px;
+    background-color: #fff;
+    margin: 0;
+}
+
+.image-holder:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Links */
+.social-media {
+    margin: 20px 0;
+    text-align: center; /* Ensure the icons are centered */
+}
+
+.social-media a {
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a img {
+    width: 40px; /* Set icon size */
+    height: auto;
+}
+
+.social-media a:hover {
+    color: #add8e6;
+}
+
+/* Footer */
+footer {
+    background-color: #2DB3DE;
+    padding: 30px 10px;
+    text-align: center;
+    color: white;
+    border-top: 3px solid #2495bf;
+}
+
+footer a {
+    color: #ffefd5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-holder {
+        max-width: 100%;
+    }
+
+    .social-media a img {
+        width: 30px; /* Reduce icon size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 1.2em; /* Font size adjustment for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+    }
+
+    .image-holder img {
+        width: 100%; /* Full-width images for small screens */
+    }
+
+    .featured-image {
+        width: 100%; /* Ensures full width for the featured images on mobile */
+    }
+
+    .social-media a img {
+        width: 25px; /* Further reduce icon size for mobile */
+    }
+
+    /* Mobile Tap Area Enhancements */
+    nav ul li a {
+        padding: 15px; /* Increase tap area for better mobile usability */
+    }
+
+    footer a {
+        padding: 15px; /* Ensure clickable areas in the footer are larger */
+    }
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Hover Effects */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #2DB3DE;
+    color: #fff;
+}
+
+/* Sticky Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+/* Drop Shadows for Depth */
+.card, .image-holder {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover, .image-holder:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Typography */
+body {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
