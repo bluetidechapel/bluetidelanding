@@ -5,6 +5,46 @@
     box-sizing: border-box;
 }
 
+
+/* Section Background Gradients */
+/* Home Section */
+#home {
+    background: linear-gradient(to right, #f0f8ff, #e0f1ff); /* Calm and inviting blue tones */
+    color: #333; /* Ensure text is readable */
+    padding: 20px; /* Add padding for space */
+}
+
+/* Faith Section */
+#faith {
+    background: linear-gradient(to bottom, #e0ffe0, #f0fff0); /* Soft greens for peace and spirituality */
+    color: #333;
+    padding: 20px;
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(to left, #fffbe7, #fef6db); /* Warm beige for a welcoming feel */
+    color: #333;
+    padding: 20px;
+}
+
+/* Disaster Section */
+#disaster {
+    background: linear-gradient(to top, #f4f4f4, #eaeaea); /* Neutral gray gradient */
+    color: #333;
+    padding: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(to right, #e0f7fa, #80deea); /* Light blue gradient for calmness */
+    color: #333;
+    padding: 20px;
+}
+
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
