@@ -7,35 +7,41 @@
 
 
 /* Section Background Gradients */
-/* Home Section */
 #home {
     background: linear-gradient(to right, #f0f8ff, #e0f1ff); /* Calm and inviting blue tones */
-    color: #333; /* Ensure text is readable */
-    padding: 20px; /* Add padding for space */
-}
-
-/* Faith Section */
-#faith {
-    background: linear-gradient(to bottom, #e0ffe0, #f0fff0); /* Soft greens for peace and spirituality */
     color: #333;
     padding: 20px;
 }
 
-/* About Section */
+
+#faith {
+    background: linear-gradient(to bottom, #5b2c6f, #8e44ad, #d2b4de); /* Subtle gradient with purples */
+    color: #f0f0f0; /* Light text for better contrast */
+    padding: 20px;
+}
+
+#faith h2, #faith p {
+    background: rgba(0, 0, 0, 0.6); /* More opaque background for text */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for text block */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Stronger text shadow */
+    color: #ffffff; /* Ensure light text inside the text block */
+}
+
+
+
 #about {
     background: linear-gradient(to left, #fffbe7, #fef6db); /* Warm beige for a welcoming feel */
     color: #333;
     padding: 20px;
 }
 
-/* Disaster Section */
 #disaster {
     background: linear-gradient(to top, #f4f4f4, #eaeaea); /* Neutral gray gradient */
     color: #333;
     padding: 20px;
 }
 
-/* Contact Section */
 #contact {
     background: linear-gradient(to right, #e0f7fa, #80deea); /* Light blue gradient for calmness */
     color: #333;
